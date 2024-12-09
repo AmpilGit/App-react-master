@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.form-type-1 {
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.form-type-1 input {
+  padding: 10px 5px;
+}
+.form-type-1 input[type="submit"] {
+  padding: 11px 32px;
+  margin: 20px auto 0 auto;
+  font-size: 16px;
+}
+.form-type-1__wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+.form-type-1__item {
+  display: flex;
+  flex-direction: column;
+}
+.button-type-1 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: 1px solid white;
+  color: white;
+  background: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  transition-duration: 0.3s;
+}
+.button-type-1:hover {
+  background: white;
+  color: #9297e0;
+}
+.button-type-2 {
+  display: block;
+  color: white;
+  background: #ff73b3;
+  box-shadow: 0 3px 5px #a5487287;
+  border: 0;
+  padding: 10px 32px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.button-type-2:hover {
+  opacity: 0.6;
+}
+.button-type-2:focus {
+  outline: 0;
+}
+.d-none {
+  display: none;
+}
+.authPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background: #5356ad;
+  font-family: 'Roboto', sans-serif;
+}
+.authPage__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+  max-height: 320px;
+  width: 100%;
+  height: 100vh;
+  padding: 0 2rem;
+  background: #999ede;
+  box-shadow: 0 0 5px #00000047;
+}
+.authPage__box:before {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 2%;
+  width: 300px;
+  height: 285px;
+  background-color: #9297e0;
+  transform: rotateX(52deg) rotateY(15deg) rotateZ(-38deg);
+  transition-duration: 0.6s;
+}
+.authPage__box:after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 2%;
+  width: 320px;
+  height: 180px;
+  background-color: #9da3e8;
+  transform: rotateX(52deg) rotateY(15deg) rotateZ(-38deg);
+  transition-duration: 0.6s;
+}
+.authPage__box_left:before {
+  left: 15%;
+  top: 10%;
+}
+.authPage__box_left:after {
+  left: 25%;
+  top: 10%;
+}
+.authPage__item {
+  text-align: center;
+  z-index: 1;
+}
+.authPage__formWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  min-height: 380px;
+  max-width: 300px;
+  width: 100%;
+  background: white;
+  z-index: 2;
+  box-shadow: 0 0 5px #00000047;
+  transition-duration: 0.6s;
+}
+.authPage__formWrap_left {
+  transform: translate(-50%);
+}
+.authPage__formWrap_right {
+  transform: translate(50%);
+}
+.authPage__title {
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: white;
+}
+.authPage__button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: 1px solid white;
+  color: white;
+  background: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  transition-duration: 0.3s;
+}
+.authPage__button:hover {
+  background: white;
+  color: #9297e0;
+}
+@media screen and (max-width: 700px) {
+  .authPage__box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+    overflow-x: hidden;
+    max-height: inherit;
+    padding: inherit;
+  }
+  .authPage__box:before {
+    top: 10%;
+  }
+  .authPage__box_left:before {
+    left: 13%;
+    top: 15%;
+  }
+  .authPage__formWrap {
+    position: inherit;
+    max-width: inherit;
+    height: 100%;
+  }
+  .authPage__formWrap_left {
+    transform: inherit;
+  }
+  .authPage__formWrap_right {
+    transform: inherit;
+  }
+  .authPage__item {
+    width: 100%;
+    padding: 10px 5px;
+  }
+}
+/*# sourceMappingURL=common.css.map */
